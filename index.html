@@ -7,37 +7,58 @@
 </head>
 <body>
     <header>
-      <section>
-        <h1>Shona McBride</h1>
-        <h2>Aspiring Web Developer</h2>
-      </section>
-      <section>
-          <img src="./SM-image.png" width="400" height="400" alt="Picture of Shona McBride"/>
-      </section>
     </header>
     <main>
-      <section>
-          <h2>About Me</h2>
-          <p>Hello! My name is Shona McBride and I'm originally from Vancouver, Canada. I moved to Manchester with my boyfriend almost one year ago after spending a year in Barcelona.
+      <section class="introduction"><!--So I can target this section and move it to the top left-->
+        <h2>Shona McBride</h2>
+        <h3>Aspiring Web Developer</h3>
+      </section>
+      <section class="picture1"><!--So I can target this section and move it to the top right-->
+        <figure>
+            <img src="./SM-image.png" width="400" height="400" alt="Photo of Shona McBride"/>
+            <figcaption>Enjoying a green tea matcha latte</figcaption>
+        </figure>
+    </section> 
+      <article><!--Move this section to bottom centre-->
+        <h2>About Me</h2>
+        <p>Hello! My name is Shona McBride and I'm originally from Vancouver, Canada. I moved to Manchester with my boyfriend almost one year ago after spending a year in Barcelona.
             My parents live in the east of Canada and I have two sisters and two nieces all of whom lived in Barcelona until earlier this year when one of my sisters recently moved to the Netherlands. 
             I grew up in North Vancouver, a suburb of Vancouver, which is close to the mountains. I originally trained as a nurse in Vancouver and worked in the profession for four years before deciding to move to Barcelona to be closer to family for a while.</p>
-          <p>Some of the hobbies I enjoy are:</p>
-          <ul>
-              <li>Bouldering</li>
-              <li>Rowing</li>
-              <li>Hiking</li>
-              <li>Being outdoors</li>
-              <li>Reading</li>
-              <li>Occasionally sewing clothes and then immediately hating them for some reason..</li>
-          </ul>
-          <p>I decided to try a web development bootcamp after being introduced to the world of coding through my boyfriend. I'd never thought I could do anything involving tech, but after trying out some free online resources I found I really quite liked it. I'm excited for all the learning that's coming up and to look back on the progress I've made at the end.</p>
-      </section>
-      <section>
-          <img src="https://pbs.twimg.com/media/D9P6o8-X4Acdmcb.jpg" alt="Photo of Barcelona streets" height="350" width="275"/>
-      </section>
+        <p>Some of the hobbies I enjoy are:</p>
+        <ul>
+          <li>Bouldering</li>
+          <li>Rowing</li>
+          <li>Hiking</li>
+          <li>Being outdoors</li>
+          <li>Reading</li>
+          <li>Occasionally sewing clothes and then immediately hating them for some reason..</li>
+        </ul>
+        <p>I decided to try a web development bootcamp after being introduced to the world of coding through my boyfriend. I'd never thought I could do anything involving tech, but after trying out some free online resources I found I really quite liked it. I'm excited for all the learning that's coming up and to look back on the progress I've made at the end.</p>
+        <p>Some quick trivia before you go:<br><br>What is one of the things I miss most about Vancouver?</p>
+        <label for="sushi">
+          <input id="sushi" type="radio" name="trivia">Sushi
+        </label>
+        <label for="walking around the city">
+          <input id="walking around the city" type="radio" name="trivia">Walking around the city
+        </label>
+        <section class="picture2"><!--Move this photo so it's to the left of the above text-->
+            <figure>
+              <img src="https://pbs.twimg.com/media/D9P6o8-X4Acdmcb.jpg" alt="Photo of Barcelona streets" height="350" width="275"/>
+              <figcaption>Barcelona</figcaption>
+            </figure>
+        </section>
+      </article>
+      <br>
     </main>
+    <section>
+      <p>Come follow me!</p>
+      <div class="social media">
+        <a href="https://twitter.com/ShonaTrainWatch">My Twitter Profile</a>
+        <a href="https://github.com/samcbride">My GitHub Profile</a>
+      </div>
+    </section><br>
     <footer>
-
+        <span>&copy Shona McBride 2020</span>
     </footer>
 </body>
 </html>
