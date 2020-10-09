@@ -1,39 +1,77 @@
 .container {
     display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto auto auto auto auto auto;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto auto auto auto auto;
+    grid-template-areas: "header header header"
+                         "intro . image-1"
+                         "contact contact contact"
+                         "image-2 . about-me"
+                         "social-media social-media social-media"
+                         "footer footer footer";
     grid-gap: 1em;
 }
-.box-1 {
+.header {
     background: pink;
-    grid-column-start: span 2;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    /* grid-column-start: span 2; */
 }
-
-.box-2 {
+.intro {
     background: blue;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
 }
-.box-3 {
+.image-1 {
     background: purple;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
 }
-.box-4 {
+.contact {
     background: orange;
-    grid-column-start: span 2;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    /* grid-column-start: span 2; */
 }
-.box-5 {
+.about-me {
     background: red;
-    grid-column-start: span 2;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    /* grid-column-start: span 2;
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row-reverse; */
 }
-.box-6 {
-    display: grid;
-    grid-template-columns: 1fr;
+.image-2 {
+    background: yellow;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    /* display: grid;
+    grid-template-columns: 1fr; */
 }
-.box-7 {
+.social-media {
     background: green;
-    grid-column-start: span 2;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 5;
+    grid-row-end: 6;
+    /* grid-column-start: span 2; */
 }
-.box-8 {
+.footer {
     background: violet;
-    grid-column-start: span 2;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 6;
+    grid-row-end: 7;
+    /* grid-column-start: span 2; */
 }
