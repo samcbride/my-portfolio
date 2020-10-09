@@ -1,0 +1,39 @@
+.container {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto auto auto auto;
+    grid-gap: 1em;
+}
+.box-1 {
+    background: pink;
+    grid-column-start: span 2;
+}
+
+.box-2 {
+    background: blue;
+}
+.box-3 {
+    background: purple;
+}
+.box-4 {
+    background: orange;
+    grid-column-start: span 2;
+}
+.box-5 {
+    background: red;
+    grid-column-start: span 2;
+    display: flex;
+    flex-direction: row-reverse;
+}
+.box-6 {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.box-7 {
+    background: green;
+    grid-column-start: span 2;
+}
+.box-8 {
+    background: violet;
+    grid-column-start: span 2;
+}

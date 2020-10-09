@@ -4,22 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-    <header>
-    </header>
-    <main>
-      <section class="introduction"><!--So I can target this section and move it to the top left-->
+  <div class="container">
+    <header class="box-1">Hello, I'm a header.</header>
+    
+      <section class="box-2"><!--So I can target this section and move it to the top left-->
         <h1>Shona McBride</h1>
         <h2>Aspiring Web Developer</h2>
       </section>
-      <section class="picture1"><!--So I can target this section and move it to the top right-->
+      <section class="box-3"><!--So I can target this section and move it to the top right-->
         <figure>
             <img src="./SM-image.png" width="400" height="400" alt="Photo of Shona McBride"/>
             <figcaption>Enjoying a green tea matcha latte</figcaption>
         </figure>
     </section> 
-      <article><!--Move this section to bottom centre-->
+    <section class="box-4">
+      <p>Contact me!</p>
+      <a href="#">Button for email?</a>
+    </section>
+      <article class="box-5">
+        <div><!--Move this section to bottom centre-->
         <h2>About Me</h2>
         <p>Hello! My name is Shona McBride and I'm originally from Vancouver, Canada. I moved to Manchester with my boyfriend almost one year ago after spending a year in Barcelona.
             My parents live in the east of Canada and I have two sisters and two nieces all of whom lived in Barcelona until earlier this year when one of my sisters recently moved to the Netherlands. 
@@ -41,24 +47,26 @@
         <label for="walking around the city">
           <input id="walking around the city" type="radio" name="trivia">Walking around the city
         </label>
-        <section class="picture2"><!--Move this photo so it's to the left of the above text-->
+        </div>
+        <section class="box-6"><!--Move this photo so it's to the left of the above text-->
             <figure>
               <img src="https://pbs.twimg.com/media/D9P6o8-X4Acdmcb.jpg" alt="Photo of Barcelona streets" height="350" width="275"/>
               <figcaption>Barcelona</figcaption>
             </figure>
-        </section>
+          </section>
       </article>
       <br>
-    </main>
-    <section>
+    
+    <section class="box-7">
       <p>Come follow me!</p>
-      <div class="social media">
+      <div>
         <a href="https://twitter.com/ShonaTrainWatch">My Twitter Profile</a>
         <a href="https://github.com/samcbride">My GitHub Profile</a>
       </div>
     </section><br>
-    <footer>
+    <footer class="box-8">
         <span>&copy Shona McBride 2020</span>
     </footer>
+  </div>
 </body>
 </html>
