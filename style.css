@@ -1,41 +1,54 @@
 .container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 46px 600px 130px 588px 72px 21px;
+    grid-template-rows: 49px 661px 130px 542px 108px 21px;
     align-items: start;
-    grid-template-areas: "header header header"
-                         "intro . image-1"
-                         "contact contact contact"
-                         "image-2 . about-me"
-                         "social-media social-media social-media"
-                         "footer footer footer";
+    grid-template-areas: "header header header header"
+                         "intro . . image-1"
+                         "contact contact contact contact"
+                         "image-2 . . about-me"
+                         "social-media social-media social-media social-media"
+                         "footer footer footer footer";
                 /* Does the grid-template-area section above have any purpose? */
-    /* grid-gap: 1em; */
-    font-family: 'David Libre', serif;
+    /* grid-gap: 2em; */
+    font-family: 'Oranienbaum', serif;
     border: 1px solid grey;
     height: 100%;
 }
 .header {
     grid-column: 1 / 5;
-    /* grid-column: 1 / 3;  */
     grid-row: 1 / 2;
-    border: 1px solid grey;
+    /* border: 1px solid grey; */
 }
 .intro {
-    grid-column: 2 / 3;
-    /* grid-column: 1 / 2; */
+    grid-column: 1 / 5;
     grid-row: 2 / 3;
-    border: 1px solid grey;
+    /* border: 1px solid grey; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: start;
     /* justify-self: stretch;*/
+    /* align-self: center; */
+    /* padding: 20%; */
+}
+.name {
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
     align-self: center;
-    padding: 20%;
+    padding: 0em 0em 0em 2em;
+}
+.title {
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+    align-self: flex-end;
+    padding: 0em 0em 10em 4em;
 }
 .image-1 {
-    grid-column: 3 / 4;
-    /* grid-column: 2 / 3; */
+    grid-column: 4 / 5;
     grid-row: 2 / 3;
-    justify-self: right;
-    border: 1px solid grey; 
+    /* justify-self: center; */
+    /* border: 1px solid grey;  */
+    
 }
 .image-1-figure {
     margin: 0;
@@ -58,21 +71,31 @@
     /* text-align: right; */
 }
 .about-me {
-    /* grid-column: 1 / 4; */
-    grid-column: 3 / 4;
+    grid-column: 1 / 5;
     grid-row: 4 / 5;
-    border: 1px solid grey;
+    /* border: 1px solid grey; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    /* justify-self: right; */
     /* grid-column-start: span 2;*/
     /* display: flex;
     flex-direction: row-reverse; */
 }
-.image-2 {
-    grid-column: 2 / 3;
-    /* grid-column: 1 / 2; */
+.image-2 { 
+    grid-column: 1 / 2;
     grid-row: 4 / 5;
-    border: 1px solid grey;
-    /* display: grid;
-    grid-template-columns: 1fr; */ */
+    /* border: 1px solid grey; */
+    float: right;
+    padding: 2.5em 0em 0em 2em;
+} 
+.image-2-size {
+    height: 400px; 
+    width: 275px;
+}
+.description {
+    grid-column: 2 / 5;
+    grid-row: 4 / 5;
+    align-self: right;
 }
 .social-media {
     grid-column: 1 / 5;
@@ -80,9 +103,12 @@
     grid-row: 5 / 6;
     background: linear-gradient(35deg, #CCFFFF, #FFCCCC);
     border: 1px solid grey;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 24px;
 }
 .footer {
-    grid-column: 1 / 4;
+    grid-column: 1 / 5;
     /* grid-column: 1 / 3; */
     grid-row: 6 / 7;
     border: 1px solid grey;
@@ -94,17 +120,29 @@
     padding: 15px 30px;
     text-align: center;
     font-size: 12px;
-    border-radius: 12px;
+    border-radius: 26px;
     text-transform: uppercase;
 }
 .button-style2 {
+    grid-column: 1 / 3;
+    grid-row: 3 / 4;
     background: transparent;
     border: 1px solid grey;
-    /* padding: 1% 10% 1% 10%; */
+    padding: 3% 5% 3% 5%;
     text-align: center;
-    font-size: 16px;
+    font-size: 14px;
     border-radius: 26px;
     text-transform: uppercase;
+    align-self: center;
+    justify-self: center;
+}
+.test {
+    grid-column: 3 / 5;
+    grid-row: 3 / 4;
+    font-size: 40px;
+    text-transform: uppercase;
+    text-align: center;
+    /* padding: 1% 0% 1% 30%; */
 }
 h1 {
     padding: 15px 30px;
@@ -118,9 +156,9 @@ h2 {
     font-size: 18px;
     text-transform: uppercase;
 }
-.test {
-    font-size: 40px;
-    text-transform: uppercase;
-    text-align: left;
-    /* padding: 1% 0% 1% 30%; */
-}
+/* .links {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-self: center;
+    justify-self: center;
+} */

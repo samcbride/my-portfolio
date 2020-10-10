@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=David+Libre&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oranienbaum&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
   <div class="container">
@@ -14,22 +15,23 @@
       <button class="button-style1" type="button">About Me</button>
     </header>
     <section class="intro">
-       <h1>Shona McBride</h1>
-       <h2>Aspiring Web Developer</h2>
-    </section>
-    <section class="image-1">
-        <figure class="image-1-figure">
-            <img class="image-size" src="./SM-image.png" alt="Photo of Shona McBride"/>
-            <figcaption>Enjoying a green tea matcha latte</figcaption>
-        </figure>
+       <h1 class="name">Shona McBride</h1>
+       <h2 class="title">Aspiring Web Developer</h2>
+       <div class="image-1" class="image-1-figure">
+       <!-- <figure class="image-1" class="image-1-figure"> -->
+          <img class="image-size" src="./SM-image.png" alt="Photo of Shona McBride"/>
+          <!-- <figcaption>Enjoying a green tea matcha latte</figcaption>
+       </figure> -->
+      </div>
     </section> 
     <section class="contact">
+       <button class="button-style2" type="button">Send me a message</button>
        <p class="test">Contact me</p>
-       <button class="button-style2" type="button">Send me a message</button><!--Should this be a button or a link?-->
+       <!--Should this be a button or a link?-->
     </section>
     <article class="about-me">
-        <div>
-        <h2>About Me</h2>
+      <div class="description">
+        <h2 class="description">About Me</h2>
         <p>Hello! My name is Shona McBride and I'm originally from Vancouver, Canada. I moved to Manchester with my boyfriend almost one year ago after spending a year in Barcelona.
             My parents live in the east of Canada and I have two sisters and two nieces all of whom lived in Barcelona until earlier this year when one of my sisters recently moved to the Netherlands. 
             I grew up in North Vancouver, a suburb of Vancouver, which is close to the mountains. I originally trained as a nurse in Vancouver and worked in the profession for four years before deciding to move to Barcelona to be closer to family for a while.</p>
@@ -42,7 +44,7 @@
           <li>Reading</li>
           <li>Occasionally sewing clothes and then immediately hating them for some reason..</li>
         </ul>
-        <p>I decided to try a web development bootcamp after being introduced to the world of coding through my boyfriend. I'd never thought I could do anything involving tech, but after trying out some free online resources I found I really quite liked it. I'm excited for all the learning that's coming up and to look back on the progress I've made at the end.</p>
+       </p>I decided to try a web development bootcamp after being introduced to the world of coding through my boyfriend. I'd never thought I could do anything involving tech, but after trying out some free online resources I found I really quite liked it. I'm excited for all the learning that's coming up and to look back on the progress I've made at the end.</p>
         <p>Some quick trivia before you go:<br><br>What is one of the things I miss most about Vancouver?</p>
         <label for="sushi"><!--I think this whole section will be taken out - too random-->
           <input id="sushi" type="radio" name="trivia">Sushi
@@ -50,25 +52,27 @@
         <label for="walking around the city">
           <input id="walking around the city" type="radio" name="trivia">Walking around the city
         </label>
-        <!-- <div class="image-2">
-          <figure>
-            <img src="https://pbs.twimg.com/media/D9P6o8-X4Acdmcb.jpg" alt="Photo of Barcelona streets" height="350" width="275"/>
-            <figcaption>Barcelona</figcaption>
-          </figure>
-        </div> -->
+      </div>
+      <div class="image-2">
+        <!-- <figure class="image-2"> -->
+          <img class="image-2-size" src="https://pbs.twimg.com/media/D9P6o8-X4Acdmcb.jpg" alt="Photo of Barcelona streets"/>
+          <!-- <figcaption>Barcelona</figcaption> -->
+        <!-- </figure> -->
+      </div>
     </article>
-    <section class="image-2">
+    <!-- <section class="image-2">
         <figure>
           <img src="https://pbs.twimg.com/media/D9P6o8-X4Acdmcb.jpg" alt="Photo of Barcelona streets" height="350" width="275"/>
           <figcaption>Barcelona</figcaption>
         </figure>
-    </section>
+    </section> -->
       <br>
     <section class="social-media">
-      <p>Come follow me!</p>
-      <div>
-        <a href="https://twitter.com/ShonaTrainWatch">My Twitter Profile</a>
-        <a href="https://github.com/samcbride">My GitHub Profile</a>
+      <p class="links">Come follow me!</p>
+      <div class="links">
+        <a href="https://twitter.com/ShonaTrainWatch" class="fa fa-twitter" target="_blank"></a>
+        <a href="https://github.com/samcbride" class="fa fa-github" target="blank"></a>
+        <a href="https://www.linkedin.com/in/shona-mcbride-273b3a175/" class="fa fa-linkedin" target="_blank"></a>
       </div>
     </section><br>
     <footer class="footer">
