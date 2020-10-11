@@ -1,12 +1,12 @@
 .container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 49px 661px 130px 993px 108px 21px;
+    grid-template-rows: 49px 661px 130px 591px 447px 543px 108px 21px;
     align-items: start;
     grid-template-areas: "header header header header"
                          "intro . . image-1"
                          "contact contact contact contact"
-                         "image-2 . . about-me"
+                         "image-2 recent experience education about-me"
                          "social-media social-media social-media social-media"
                          "footer footer footer footer";
                 /* Does the grid-template-area section above have any purpose? */
@@ -81,7 +81,8 @@
 } */
 .about-me {
     grid-column: 1 / 5;
-    grid-row: 4 / 5;
+    grid-row: 4 / 7;
+    /* grid-row: 4 / 5; */
     border: 1px solid grey;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -89,42 +90,43 @@
 .recent-experience {
     grid-column: 2 / 4;
     grid-row: 4 / 5;
-    align-self: flex-start;
-    /* justify-self: center; */
-    padding: 0em 0em 5em 0em;
-    line-height: 2em;
-    border: 1px solid grey;
+    /* grid-row: 4 / 5; */
+    line-height: 3em;
+    /* border: 1px solid grey; */
+    padding: 5em 0em 5em 0em;
 }
 .education {
     grid-column: 2 / 4;
-    grid-row: 4 / 5;
-    /* align-self: flex-start; */
-    /* align-self: flex-start; */
-    /* justify-self: center; */
-    padding: 20em 0em 0em 0em;
-    line-height: 2em;
-    border: 1px solid grey;
+    grid-row: 5 / 6;
+    /* grid-row: 4 / 5; */
+    line-height: 3em;
+    /* border: 1px solid grey; */
+    padding: 5em 0em 5em 0em;
+    background-color: lavenderblush;
 }
 .image-2 { 
     grid-column: 1 / 2;
     grid-row: 4 / 5;
-    border: 1px solid grey;
-    float: right;
-    padding: 22em 0em 0em 2em;
+    /* border: 1px solid grey; */
+    /* float: right; */
+    /* padding: 22em 0em 0em 2em; */
 } 
-.image-2-size {
+/* .image-2-size {
     height: 400px; 
     width: 275px;
-}
+} */
 .description {
     grid-column: 1 / 5;
-    grid-row: 4 / 5;
-    padding: 40em 4em 5em 2em;
-    line-height: 1.5em;
+    grid-row: 6 / 7;
+    /* grid-row: 4 / 5; */
+    padding: 5em 4em 5em 4em;
+    line-height: 2em;
+    border: 1 px solid grey;
 }
 .social-media {
     grid-column: 1 / 5;
-    grid-row: 5 / 6;
+    grid-row: 7 / 8;
+    /* grid-row: 5 / 6; */
     background: linear-gradient(35deg, #CCFFFF, #FFCCCC);
     border: 1px solid grey;
     text-align: center;
@@ -133,7 +135,8 @@
 }
 .footer {
     grid-column: 1 / 5;
-    grid-row: 6 / 7;
+    grid-row: 8 / 9;
+    /* grid-row: 6 / 7; */
     border: 1px solid grey;
 }
 .button-style1 {
@@ -159,7 +162,7 @@
     align-self: center;
     justify-self: center;
 }
-.test {
+.contact-me {
     grid-column: 3 / 5;
     grid-row: 3 / 4;
     font-size: 40px;
@@ -189,6 +192,9 @@ ul {
     list-style-position: inside;
     padding: 0em 0em 0em 7em;
 }
+/* li {
+    padding: 0em 0em 0em 15em;
+} */
 .year {
     font-weight: bold; 
 } /*----The above is not working - why??? */
@@ -198,3 +204,5 @@ ul {
     align-self: center;
     justify-self: center;
 } */
+/* You're going to have issues when you try to make this responsive - will 
+likely need to adjust list padding, etc or take out completely  */
