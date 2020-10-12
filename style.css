@@ -2,10 +2,9 @@
     /* --auto-grid-min-size: 16rem; */
     display: grid;
     /* grid-template-columns: repeat(var(--auto-grid-min-size), 1fr); */
-    grid-template-columns: 4(auto-fit, minmax(240px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     grid-gap: 1rem;
     grid-auto-rows: minmax (100px, auto);
-    /* grid-template-rows: 49px 661px 130px 591px 447px 543px 181px 21px; */
     align-items: center;
     grid-template-areas: "header header header header"
                          "intro . . image-1"
@@ -79,19 +78,17 @@
     grid-column: 1 / 5;
     grid-row: 4 / 7;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    /* justify-items: end; */
-    /* align-self: center; */
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 .recent-experience {
-    grid-column: 1 / 5;
+    grid-column: 2 / 5;
     grid-row: 4 / 5;
     line-height: 3em;
     padding: 5em 0em 5em 0em;
     justify-self: center;
 }
 .education {
-    grid-column: 1 / 5;
+    grid-column: 2 / 5;
     grid-row: 5 / 6;
     line-height: 3em;
     padding: 5em 0em 5em 0em;
@@ -99,11 +96,12 @@
     background-color: white;
 }
 .description {
-    grid-column: 1 / 5;
+    grid-column: 2 / 5;
     grid-row: 6 / 7;
     padding: 5em 4em 5em 4em;
     line-height: 2em;
     border: 1 px solid grey;
+    justify-self: center;
 }
 .social-media {
     grid-column: 1 / 5;
@@ -118,16 +116,16 @@
     grid-column: 2 / 4;
     grid-row: 7 / 8;
     text-align: center;
+    font-size: 30px;
 }
 .links {
     grid-column: 2 / 4;
     grid-row: 7 / 8;
-    padding: 2.8em 10em 2em 10em;
+    padding: 3.5em 10em 2em 10em;
     font-size: 30px;
     width: 100px;
     text-decoration: none;
     text-align: center;
-    align-self: flex-end;
     justify-self: center;
   }
   .fa:hover {
@@ -186,7 +184,6 @@ ul {
     text-align: start;
     font-size: 16px;
     list-style: none;
-    /* padding: 0em 0em 0em 30em; */
 }
 /* You're going to have issues when you try to make this responsive - will 
 likely need to adjust list padding, etc or take out completely  */
