@@ -196,9 +196,12 @@ h2 {
     font-size: 16px;
     list-style: none;
 }
-.get-in-touch-page {
+.get-in-touch-page { /* below is styling relating to separate page */
     display: grid;
     align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); 
+    grid-auto-rows: minmax(100px);
+    grid-gap: 1em;
     /* grid-template-columns: 100px 1fr 1fr 1fr 100px; 
     grid-template-rows: 200px 200px 369px 369px 100px; */
     grid-template-areas: ". questions questions questions ."
@@ -207,9 +210,7 @@ h2 {
                          ". form form form ."
                          ". . . . .";
     font-family: 'Roboto', sans-serif;
-    /* background: linear-gradient(35deg, #CCFFFF, #FFCCCC); */
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); 
-    grid-auto-rows: minmax(100px);  
+    background: linear-gradient(35deg, #CCFFFF, #FFCCCC);  
 }
 .questions {
     grid-column: 2 / 5;
@@ -218,7 +219,6 @@ h2 {
     font-size: 60px;
     font-weight: bold;
     padding: 1em;
-    background-color: yellow;
 }
 .get-in-touch {
     grid-column: 3 / 4;
@@ -226,36 +226,37 @@ h2 {
     justify-self: center;
     font-size: 45px;
     padding: 1em;
-    background-color: green;
 }
 #form {
-    grid-column: 2 / 5;
+    grid-column: 3 / 4;
     grid-row: 3 / 5;
+    justify-self: stretch;
     /* height: 100%;
     width: 100%; */
     /* margin: 0 auto; */
     box-sizing: border-box;
-    background-color: purple;
 }
 input {
     display: inline-block;
     width: 50%;
     padding: 15px;
-    margin: 0em 0em 0em 2em;
+    margin: 0em 0em 0em 1em;
     vertical-align: top;
+    border-radius: 10em;
 }
 textarea {
     /* display: inline-block; */
     width: 50%;
-    padding: 100px 20px;
-    margin: 0em 0em 0em 1em;
+    padding: 1em 0em 15em 2.7em;
+    border-radius: 2em;
+    /* margin: 0em 0em 0em 1em; */
     vertical-align: top;
 }
 label {
     display: inline-block;
     /* align-self: start; */
     /* float: center; */
-    /* padding: 0em 0em 0em 3em; */
+    padding: 0em 2em 0em 0em;
     /* width: 90px; */
     text-align: right;
     /* margin: 0em 1em 0em 0em; */
@@ -270,4 +271,10 @@ label {
 #form li {
     padding: 3em;
     text-align: center;
+}
+.button {
+    /* padding: 2em; */
+
+    background: linear-gradient(35deg, #C3DAFE , #EFB0FC);
+    border: 1px solid grey;
 }
