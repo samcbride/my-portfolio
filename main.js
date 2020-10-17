@@ -6,8 +6,9 @@ function submit(event) {
     alert (name + ' ' + mail + ' ' + msg + '\n\n\nThanks for your message!');
     console.log(name, mail, msg);
 }
-function clearForm() {
-    document.getElementById('form').addEventListener('reset', clearForm)
+function clear() {
+    document.getElementById('form').reset();
 }
 
 document.getElementById('submit').addEventListener('click', submit);
+document.getElementById('clear').addEventListener('click', clear);
