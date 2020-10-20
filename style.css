@@ -45,15 +45,12 @@ nav ul {
     font-size: 12px;
     border-radius: 26px;
     text-transform: uppercase;
-    text-decoration: none; 
-    /* Above text-decoration not working - why? */
 }
 .navigation:hover {
     opacity: 0.7;
   }
 .intro {
-    grid-column: 1, span 4;
-    /* grid-column: 1 / 5; */
+    grid-column: 1 / 5;
     grid-row: 2 / 3;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -184,7 +181,6 @@ nav ul {
     padding: 3.5em 10em 2em 10em;
     font-size: 30px;
     width: 100px;
-    /* text-decoration: none; */
     text-align: center;
     justify-self: center;
   }
@@ -194,14 +190,17 @@ nav ul {
   .fa-twitter {
     background: transparent;
     color: black;
+    text-decoration: none;
   }
   .fa-github {
       background-color: transparent;
       color: black;
+      text-decoration: none;
   }
   .fa-linkedin {
     background: transparent;
     color: black;
+    text-decoration: none;
   }
 .footer {
     grid-column: 1 / 5;
@@ -224,23 +223,29 @@ nav ul {
 .button-style2:hover {
     opacity: 0.7;
 } 
+.link {
+    text-decoration: none;
+}
   /*End of Home page */
 
-/* Below is the 'about-me' page */
+/* Below is the 'About Me' page */
 .about-me {
     grid-column: 1 / 5;
     grid-row: 1 / 4;
     display: grid;
+    /* grid-template-columns: 200px 1fr 1fr 200px; */
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-areas: ". description description ."
+                         ". recent-experience recent-experience ."
+                         ". education education .";
     font-family: 'Roboto', sans-serif; 
     background: linear-gradient(35deg, #C3DAFE , #EFB0FC);
 }
 .description {
-    /* display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center; */
-    grid-column: 2 / 4;
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* flex-grow: stretch; */
+    grid-column: 1 / 2;
     grid-row: 1 / 2;
     /* padding: 2.5em 5em 2.5em 5em;
     margin: 2.5em 5em 2em 5em; */
@@ -266,6 +271,7 @@ nav ul {
 .about-me h2 {
     font-size: 30px;
     text-transform: uppercase;
+    text-align: center;
 }
 .about-me ul {
     text-align: start;
