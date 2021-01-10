@@ -12,3 +12,15 @@ function clear() {
 
 document.getElementById('submit').addEventListener('click', submit);
 document.getElementById('clear').addEventListener('click', clear);
+
+
+
+
+
+
+
+
+
+
+
+

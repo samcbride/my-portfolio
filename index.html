@@ -5,57 +5,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Signika:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
   <div class="container">
-    <header> 
-      <nav class="header">
-        <ul>
-          <li class="navigation"><a href="#" class="link">Projects</a></li>
-          <li class="navigation"><a href="about.html" class="link">About Me</a></li>
-          <!-- <button class="button-style1" type="button">Projects</button>
-          <button class="button-style1" type="button">About Me</button> -->
-        </ul>
-      </nav>
-    </header>
+    <nav class="navigation">
+      <ul class="menu">
+        <li><a href="#projectssection" class="link" class="projectos">Projects</a></li>
+        <li><a href="about.html" class="link" class="aboutme">About Me</a></li>
+        <li><a href="contactme.html" class="link" class="sendmessage">Send me a message</a></li>
+      </ul>
+    </nav>
     <section class="intro">
-       <h1 class="name">Shona McBride</h1>
-       <h2 class="title">Aspiring Web Developer</h2>
-       <div class="image-1" class="image-1-figure">
-          <img class="image-size" src="./SM-image.png" alt="Photo of Shona McBride">
-      </div>
-    </section> 
-    <section class="contact">
-       <button class="button-style2" type="button"><a href="contactme.html" class="link">Send me a message</a> </button>
-       <p class="contact-me">Contact me</p>
+      <h1 class="name">Shona McBride</h1>
+      <h2 class="title">Junior Web Developer</h2>
     </section>
-    <section class="projects">
-      <h2 class="my-projects">My Projects</h2>
+    <section class="image" class="image-figure">
+      <img class="image-size" src="./SM-image.png" alt="Photo of Shona McBride">
+    </section>
+    <section class="divide">
+    </section>
+    <section id="projectssection" class="projects">
+      <h2 class="projectheader">My Projects</h2>
+    </section>
+    <section class="card1">
       <div class="cards">
-        <article class="card" class="card1">
-          <header>First Webpage</header>
-          <a href="https://samcbride.github.io/my-first-webpage/"><img src="my-first-webpage.png" alt="My first webpage"></a>
-        </article>
-        <article class="card" class="card2">
-          <header>HTML Scrapbook</header>
-          <a href="https://samcbride.github.io/html-scrapbook/"><img src="HTML-scrapbook.png" alt="My HTML Scrapbook"></a>
-        </article>
+          <header class="cardheader">First Webpage</header>
+          <a href="https://samcbride.github.io/my-first-webpage/"><img src="my-first-webpage.png" alt="My first webpage" class="cardimage"></a>
       </div>
+    </section>
+    <section class="card2">
+        <div class="cards">
+          <header class="cardheader">HTML Scrapbook</header>
+          <a href="https://samcbride.github.io/html-scrapbook/"><img src="HTML-scrapbook.png" alt="My HTML Scrapbook" class="cardimage"></a>
+        </div>
     </section>
       <br>
     <section class="social-media">
       <p class="follow-me">Come follow me!</p>
-      <div class="links">
-        <a href="https://twitter.com/ShonaTrainWatch" class="fa fa-twitter" target="_blank"></a>
+      <div class="socialmedialinks">
+        <a href="https://twitter.com/shonaamcbride" class="fa fa-twitter" target="_blank"></a>
         <a href="https://github.com/samcbride" class="fa fa-github" target="blank"></a>
         <a href="https://www.linkedin.com/in/shona-mcbride-273b3a175/" class="fa fa-linkedin" target="_blank"></a>
       </div><br>
-     </section> 
-    <footer class="footer">
+    </section> 
+    <!-- <footer class="footer">
         <span>&copy Shona McBride 2020</span>
-    </footer>
+    </footer> -->
   </div>
 </body>
 </html>
