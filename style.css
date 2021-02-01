@@ -295,6 +295,30 @@ a {
     }
 }
 
+@media (max-width: 680px) {
+    .cardheader1  {
+        width: 55%;
+    }
+}
+
+@media (max-width: 680px) {
+    .cardheader2 {
+        width: 63%;
+    }
+}
+
+@media (max-width: 450px) {
+    .cardheader1  {
+        width: 53%;
+    }
+}
+
+@media (max-width: 450px) {
+    .cardheader2 {
+        width: 60%;
+    }
+}
+
 @media (max-width: 1000px) {
     .aboutme {
         margin: 2em 0em 2em 0em;
