@@ -1,169 +1,167 @@
 /* Home page */
 
 img {
-    max-width: 100%;
+  max-width: 100%;
 }
 
 .container {
-    display: grid;
-    grid-template-areas: 
-        "navigation navigation"
-        "intro image"
-        "divide divide "
-        "projects projects"
-        "card1 card2"
-        "social-media social-media";
-    font-family: 'Signika', sans-serif;
-    background-color: #F3F4F6; 
+  display: grid;
+  grid-template-areas:
+    "navigation navigation"
+    "intro image"
+    "divide divide "
+    "projects projects"
+    "card1 card2"
+    "social-media social-media";
+  font-family: "Signika", sans-serif;
+  background-color: #f3f4f6;
+  color: #212529;
 }
 
 .navigation {
-    grid-area: navigation;
-    grid-template-columns: repeat(autofit, minmax(500px, 1fr));
-    padding: 1em;
+  grid-area: navigation;
+  grid-template-columns: repeat(autofit, minmax(500px, 1fr));
+  padding: 1em;
 }
 
 .menu {
-    max-width: 40%;
-    display: grid;
-    grid-template-areas: 
-    "projectos aboutme sendmessage";
-    padding: 0;
-    margin: 0;
-    list-style: none;
+  max-width: 40%;
+  display: grid;
+  grid-template-areas: "projectos aboutme sendmessage";
+  padding: 0;
+  margin: 0;
+  list-style: none;
 }
 
 .link {
-    background: linear-gradient(35deg, #CCFFFF, #FFCCCC);
-    border: 2px solid #D5D1DC;
-    padding: 1em 2em;
-    text-align: center;
-    font-size: 12px;
-    border-radius: 26px;
-    text-transform: uppercase;
-    text-decoration: none;
+  background: linear-gradient(35deg, #ccffff, #ffcccc);
+  border: 2px solid #d5d1dc;
+  padding: 1em 2em;
+  text-align: center;
+  font-size: 12px;
+  border-radius: 26px;
+  text-transform: uppercase;
+  text-decoration: none;
 }
 
 .link:hover {
-    opacity: 0.7;
+  opacity: 0.7;
 }
 
 .projectos {
-    grid-area: projectos;
+  grid-area: projectos;
 }
 
 .aboutme {
-    grid-area: aboutme;
+  grid-area: aboutme;
 }
 
 .sendmessage {
-    grid-area: sendmessage;
+  grid-area: sendmessage;
 }
 
 .intro {
-    grid-area: intro;
-    display: grid;
-    justify-content: center;
-    align-content: center;
+  grid-area: intro;
+  display: grid;
+  justify-content: center;
+  align-content: center;
 }
 
 .name {
-    font-weight: bold;
-    font-size: 40px;
-    text-transform: uppercase;
+  font-weight: bold;
+  font-size: 40px;
+  text-transform: uppercase;
 }
 
 .title {
-    text-align: center;
-    font-size: 20px;
-    text-transform: uppercase;
+  text-align: center;
+  font-size: 20px;
+  text-transform: uppercase;
 }
 
 .image {
-    grid-area: image;
-    display: grid;
-    justify-content: center;
-    align-content: center;
+  grid-area: image;
+  display: grid;
+  justify-content: center;
+  align-content: center;
 }
 
 .divide {
-    grid-area: divide;
-    min-height: 200px;
-    background: linear-gradient(35deg, #CCFFFF, #FFCCCC);
+  grid-area: divide;
+  min-height: 200px;
+  background: linear-gradient(35deg, #ccffff, #ffcccc);
 }
 
 .projects {
-    grid-area: projects;
-    display: grid;
-    justify-content: center;
-    align-content: center;
+  grid-area: projects;
+  display: grid;
+  justify-content: center;
+  align-content: center;
 }
 
 .projectheader {
-    justify-self: center;
-    font-size: 34px;
-    margin: 2em 0em 2em 0em;
+  justify-self: center;
+  font-size: 34px;
+  margin: 2em 0em 2em 0em;
 }
 
 .card1 {
-    grid-area: card1;
-    display: grid;
-    grid-template-columns: 
-        "card1";
-    justify-items: center;
-    align-self: center;
-    padding: 0em 0em 3em 0em;
+  grid-area: card1;
+  display: grid;
+  grid-template-columns: "card1";
+  justify-items: center;
+  align-self: center;
+  padding: 0em 0em 3em 0em;
 }
 
 .card2 {
-    grid-area: card2;
-    display: grid;
-    grid-template-columns: 
-        "card2";
-    justify-items: center;
-    align-self: center;
-    padding: 0em 0em 3em 0em;
+  grid-area: card2;
+  display: grid;
+  grid-template-columns: "card2";
+  justify-items: center;
+  align-self: center;
+  padding: 0em 0em 3em 0em;
 }
 
 .cardheader1 {
-    text-align: center;
-    font-size: 20px;
-    font-weight: 600;
-    border-bottom: 1px solid #C6CAD2;
-    background-color: #F8DEF8;
-    padding: 0.25em 0.75em;
-    width: 56%;
-    justify-items: center;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+  border-bottom: 1px solid #c6cad2;
+  background-color: #f8def8;
+  padding: 0.25em 0.75em;
+  width: 56%;
+  justify-items: center;
 }
 
 .cardheader2 {
-    text-align: center;
-    font-size: 20px;
-    font-weight: 600;
-    border-bottom: 1px solid #C6CAD2;
-    background-color: #F8DEF8;
-    padding: 0.25em 0.75em;
-    width: 63%;
-    justify-items: center;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+  border-bottom: 1px solid #c6cad2;
+  background-color: #f8def8;
+  padding: 0.25em 0.75em;
+  width: 63%;
+  justify-items: center;
 }
 
 a {
-    display: grid;
-    justify-items: center;
+  display: grid;
+  justify-items: center;
 }
 
 .cardimage1 {
-    grid-area: card1;
-    max-width: 60%;
-    justify-items: center;
-    align-self: center;
+  grid-area: card1;
+  max-width: 60%;
+  justify-items: center;
+  align-self: center;
 }
 
 .cardimage2 {
-    grid-area: card2;
-    max-width: 67.5%;
-    justify-items: center;
-    align-self: center;
+  grid-area: card2;
+  max-width: 67.5%;
+  justify-items: center;
+  align-self: center;
 }
 
 /* Might need the below code */
@@ -199,165 +197,165 @@ a {
 }  */
 
 .social-media {
-    grid-area: social-media;
-    display: grid;
-    justify-content: center;
-    align-content: center;
-    background: linear-gradient(35deg, #C3DAFE , #EFB0FC);
-    text-transform: uppercase;
-    font-size: 24px;
-    margin: 1em 0em 1em 0em;
-    padding: 0em 0em 1em 0em;
+  grid-area: social-media;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  background: linear-gradient(35deg, #c3dafe, #efb0fc);
+  text-transform: uppercase;
+  font-size: 24px;
+  margin: 1em 0em 1em 0em;
+  padding: 0em 0em 1em 0em;
 }
 
 .follow-me {
-    text-align: center;
-    font-size: 30px;
-    justify-self: center;
+  text-align: center;
+  font-size: 30px;
+  justify-self: center;
 }
 
 .socialmedialinks {
-    font-size: 30px;
-    width: 100px;
-    text-align: center;
-    justify-self: center;
-    padding: 0em 0em 0.5em 0em;
-  }
+  font-size: 30px;
+  width: 100px;
+  text-align: center;
+  justify-self: center;
+  padding: 0em 0em 0.5em 0em;
+}
 
 .fa:hover {
-    opacity: 0.7;
+  opacity: 0.7;
 }
 
 .fa-twitter {
-    background: transparent;
-    color: black;
-    text-decoration: none;
+  background: transparent;
+  color: black;
+  text-decoration: none;
 }
 
 .fa-github {
-    background-color: transparent;
-    color: black;
-    text-decoration: none;
+  background-color: transparent;
+  color: black;
+  text-decoration: none;
 }
 
 .fa-linkedin {
-    background: transparent;
-    color: black;
-    text-decoration: none;
+  background: transparent;
+  color: black;
+  text-decoration: none;
 }
 
 @media (max-width: 1075px) {
-    .sendmessage {
-        float: left;
-        margin: 2em 0em 0em 0em;
-    }
+  .sendmessage {
+    float: left;
+    margin: 2em 0em 0em 0em;
+  }
 }
 
 @media (max-width: 1000px) {
-    .container {
-        grid-template-areas: 
-        "navigation"
-        "intro"
-        "image"
-        "divide"
-        "projects"
-        "card1"
-        "card2"
-        "social-media";
-    }
+  .container {
+    grid-template-areas:
+      "navigation"
+      "intro"
+      "image"
+      "divide"
+      "projects"
+      "card1"
+      "card2"
+      "social-media";
+  }
 }
 
 @media (max-width: 1000px) {
-    .navigation {
-        justify-items: stretch;
-    }
+  .navigation {
+    justify-items: stretch;
+  }
 }
 
 @media (max-width: 1000px) {
-    .menu {
-        grid-template-areas: 
-        "projectos"
-        "aboutme"
-        "sendmessage";
-        width: 100%;
-        padding: 0.5em 1em;
-        margin: 2em;
-        text-align: center;
-        font-size: 14px;
-        border-radius: 26px;  
-        justify-self: center;  
-    }
+  .menu {
+    grid-template-areas:
+      "projectos"
+      "aboutme"
+      "sendmessage";
+    width: 100%;
+    padding: 0.5em 1em;
+    margin: 2em;
+    text-align: center;
+    font-size: 14px;
+    border-radius: 26px;
+    justify-self: center;
+  }
 }
 
 @media (max-width: 1000px) {
-    .projectos {
-        margin: 0em 0em 2em 0em;
-    }
+  .projectos {
+    margin: 0em 0em 2em 0em;
+  }
 }
 
 @media (max-width: 680px) {
-    .cardheader1  {
-        width: 55%;
-    }
+  .cardheader1 {
+    width: 55%;
+  }
 }
 
 @media (max-width: 680px) {
-    .cardheader2 {
-        width: 63%;
-    }
+  .cardheader2 {
+    width: 63%;
+  }
 }
 
 @media (max-width: 450px) {
-    .cardheader1  {
-        width: 53%;
-    }
+  .cardheader1 {
+    width: 53%;
+  }
 }
 
 @media (max-width: 450px) {
-    .cardheader2 {
-        width: 60%;
-    }
+  .cardheader2 {
+    width: 60%;
+  }
 }
 
 @media (max-width: 1000px) {
-    .aboutme {
-        margin: 2em 0em 2em 0em;
-    }
+  .aboutme {
+    margin: 2em 0em 2em 0em;
+  }
 }
 
 @media (max-width: 1000px) {
-    .sendmessage {
-        margin: 2em 0em 0em 0em;
-    }
+  .sendmessage {
+    margin: 2em 0em 0em 0em;
+  }
 }
 
 @media (max-width: 500px) {
-    .menu {
-        grid-template-areas: 
-        "projectos"
-        "aboutme"
-        "sendmessage";
-        width: 100%;
-        padding: 0em 0.5em;
-        margin: 0em;
-        text-align: center;
-        font-size: 16px;
-        border-radius: 26px;  
-    }
+  .menu {
+    grid-template-areas:
+      "projectos"
+      "aboutme"
+      "sendmessage";
+    width: 100%;
+    padding: 0em 0.5em;
+    margin: 0em;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 26px;
+  }
 }
 
 @media (max-width: 500px) {
-    .container {
-        grid-template-areas: 
-        "navigation"
-        "intro"
-        "image"
-        "divide"
-        "projects"
-        "card1"
-        "card2"
-        "social-media";
-    }
+  .container {
+    grid-template-areas:
+      "navigation"
+      "intro"
+      "image"
+      "divide"
+      "projects"
+      "card1"
+      "card2"
+      "social-media";
+  }
 }
 
 /* grid-template-areas: 
@@ -368,270 +366,259 @@ a {
 "card1 card2"
 "social-media social-media"; */
 
-
 /*End of Home page */
-
-
-
 
 /* About Me page */
 
 .about-me {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 75px, 400px, 300px;
-    grid-template-areas: 
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 75px, 400px, 300px;
+  grid-template-areas:
     ". item1 item1 ."
     ". item2 item2 ."
     "image2 image2 image2 image2";
-    font-family: 'Signika', sans-serif;
-    background: linear-gradient(35deg, #CCFFFF, #FFCCCC);
-    justify-content: center;
-    align-content: center;
+  font-family: "Signika", sans-serif;
+  background: linear-gradient(35deg, #ccffff, #ffcccc);
+  justify-content: center;
+  align-content: center;
+  color: #212529;
 }
 
 .item1 {
-    grid-area: item1;
-    font-size: 30px;
-    font-weight: bold;
-    text-transform: uppercase;
-    text-align: center;
-    margin: 2em 0em 0em 0em;
+  grid-area: item1;
+  font-size: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 2em 0em 0em 0em;
 }
 
 .item2 {
-    grid-area: item2;
-    min-height: 600px;
-    font-size: 20px;
-    font-weight: lighter;
-    margin: 3em 0em 0em 0em;
+  grid-area: item2;
+  min-height: 600px;
+  font-size: 20px;
+  font-weight: lighter;
+  margin: 3em 0em 0em 0em;
 }
 
 .image2 {
-    grid-area: image2;
+  grid-area: image2;
+  max-width: 100%;
+  margin: 1em 0em 2em 0em;
+  justify-self: center;
+  align-self: center;
+}
+
+@media (max-width: 850px) {
+  .about-me {
+    grid-template-areas:
+      "item1 item1 item1 item1"
+      "item2 item2 item2 item2"
+      "image2 image2 image2 image2";
+    padding: 0em 0.5em 0em 0.5em;
+  }
+}
+
+@media (max-width: 850px) {
+  .image2 {
     max-width: 100%;
-    margin: 1em 0em 2em 0em;
-    justify-self: center;
-    align-self: center;
-}
-
-@media (max-width: 850px) {
-    .about-me {
-        grid-template-areas: 
-        "item1 item1 item1 item1"
-        "item2 item2 item2 item2"
-        "image2 image2 image2 image2";
-        padding: 0em 0.5em 0em 0.5em;
-    }
-}
-
-@media (max-width: 850px) {
-    .image2 {
-        max-width: 100%;
-        justify-self: stretch;
-        align-self: stretch;
-    }
+    justify-self: stretch;
+    align-self: stretch;
+  }
 }
 
 /* End of About-me page */
 
-
 /* Get In Touch page */
 
 .get-in-touch-page {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 100px, 100px, 800px;
-    grid-template-areas: 
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 100px, 100px, 800px;
+  grid-template-areas:
     ". questions ."
     ". get-in-touch ."
     ". form ."
     ". form .";
-    justify-content: center;
-    align-content: center;
-    font-family: 'Signika', sans-serif;
-    background: linear-gradient(35deg, #CCFFFF, #FFCCCC);
-    min-height: 800px;
+  justify-content: center;
+  align-content: center;
+  font-family: "Signika", sans-serif;
+  background: linear-gradient(35deg, #ccffff, #ffcccc);
+  min-height: 800px;
+  color: #212529;
 }
 
 .questions {
-    grid-area: questions;
-    justify-self: center;
-    align-self: center;
-    font-size: 40px;
+  grid-area: questions;
+  justify-self: center;
+  align-self: center;
+  font-size: 40px;
 }
 
 .get-in-touch {
-    grid-area: get-in-touch;
-    justify-self: center;
-    align-self: center;
-    font-size: 34px;
+  grid-area: get-in-touch;
+  justify-self: center;
+  align-self: center;
+  font-size: 34px;
 }
 
 #form {
-    grid-area: form;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 20px 50px 20px 50px 20px 200px 20px;
-    grid-template-areas: 
-    "form_name" 
+  grid-area: form;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 20px 50px 20px 50px 20px 200px 20px;
+  grid-template-areas:
+    "form_name"
     "name"
-    "form_email" 
+    "form_email"
     "mail"
-    "form_message" 
+    "form_message"
     "msg"
-    "submit" 
+    "submit"
     "clear";
-    grid-gap: 10px;
-    justify-content: stretch;
-    box-sizing: border-box;
-    padding: 2em;
-    width: 100%;
-    height: 100%;
-    vertical-align: top;
-    background: linear-gradient(35deg, #C3DAFE , #EFB0FC);
-    min-height: 625px;
-    align-self: start;
+  grid-gap: 10px;
+  justify-content: stretch;
+  box-sizing: border-box;
+  padding: 2em;
+  width: 100%;
+  height: 100%;
+  vertical-align: top;
+  background: linear-gradient(35deg, #c3dafe, #efb0fc);
+  min-height: 625px;
+  align-self: start;
+  color: #212529;
 }
 
 .form_name {
-    grid-area: form_name;
-    text-align: start;
-    padding: 0em 1em 0em 0em;
+  grid-area: form_name;
+  text-align: start;
+  padding: 0em 1em 0em 0em;
 }
 
 #name {
-    grid-area: name;
-    padding: 0em 0em 0em 1em;
-    border-radius: 0.5em;
-    border-style: solid;
+  grid-area: name;
+  padding: 0em 0em 0em 1em;
+  border-radius: 0.5em;
+  border-style: solid;
 }
 
 .form_email {
-    grid-area: form_email;
-    text-align: start;
-    padding: 0em 1em 0em 0em;
+  grid-area: form_email;
+  text-align: start;
+  padding: 0em 1em 0em 0em;
 }
 
 #mail {
-    grid-area: mail;
-    padding: 0em 0em 0em 1em;
-    border-radius: 0.5em;
-    border-style: solid;
+  grid-area: mail;
+  padding: 0em 0em 0em 1em;
+  border-radius: 0.5em;
+  border-style: solid;
 }
 
 .form_message {
-    grid-area: form_message;
-    text-align: start;
-    padding: 0em 1em 0em 0em;
+  grid-area: form_message;
+  text-align: start;
+  padding: 0em 1em 0em 0em;
 }
 
 #msg {
-    grid-area: msg;
-    padding: 1em 0em 0em 1em;
-    border-radius: 0.5em;
-    border-style: solid;
-    font-size: 13px;
-    font-family: 'Signika', sans-serif;
-    font-weight: lighter;
+  grid-area: msg;
+  padding: 1em 0em 0em 1em;
+  border-radius: 0.5em;
+  border-style: solid;
+  font-size: 13px;
+  font-family: "Signika", sans-serif;
+  font-weight: lighter;
 }
 
 button {
-    grid-area: submit;
-    border-radius: 0.5em;
-    border-style: solid;
-    background: linear-gradient(35deg, #CCFFFF, #FFCCCC);
-    padding: 2em;
-    text-align: center;
-    justify-content: center;
+  grid-area: submit;
+  border-radius: 0.5em;
+  border-style: solid;
+  background: linear-gradient(35deg, #ccffff, #ffcccc);
+  padding: 2em;
+  text-align: center;
+  justify-content: center;
 }
 
 #submit {
-    margin: 1em 0em 7em 0em;
-    padding: 1.5em 0em 1.5em 0em;
-    justify-content: center;
-    align-self: start;
+  margin: 1em 0em 7em 0em;
+  padding: 1.5em 0em 1.5em 0em;
+  justify-content: center;
+  align-self: start;
 }
 
 #clear {
-    margin: 8em 0em 0em 0em;
-    padding: 1.5em 0em 1.2em 0em;
-    justify-content: center;
-    align-self: start;
+  margin: 8em 0em 0em 0em;
+  padding: 1.5em 0em 1.2em 0em;
+  justify-content: center;
+  align-self: start;
 }
 
 button:hover {
-    opacity: 0.7;
+  opacity: 0.7;
 }
 
 @media (max-width: 1500px) {
-    #form {
-        grid-template-areas: 
-        "form_name form_name" 
-        "name name"
-        "form_email form_email" 
-        "mail mail"
-        "form_message form_message" 
-        "msg msg"
-        ". submit submit ."
-        ". clear clear .";
-    }
+  #form {
+    grid-template-areas:
+      "form_name form_name"
+      "name name"
+      "form_email form_email"
+      "mail mail"
+      "form_message form_message"
+      "msg msg"
+      ". submit submit ."
+      ". clear clear .";
+  }
 }
 
 @media (max-width: 1000px) {
-    #form {
-        grid-template-areas: 
-        "form_name form_name" 
-        "name name"
-        "form_email form_email" 
-        "mail mail"
-        "form_message form_message" 
-        "msg msg"
-        ". submit submit ."
-        ". clear clear .";
-    }
+  #form {
+    grid-template-areas:
+      "form_name form_name"
+      "name name"
+      "form_email form_email"
+      "mail mail"
+      "form_message form_message"
+      "msg msg"
+      ". submit submit ."
+      ". clear clear .";
+  }
 }
 
 @media (max-width: 900px) {
-    #form {
-        grid-template-areas: 
-        "form_name form_name" 
-        "name name"
-        "form_email form_email" 
-        "mail mail"
-        "form_message form_message" 
-        "msg msg"
-        ". submit submit ."
-        ". clear clear .";
-    }
+  #form {
+    grid-template-areas:
+      "form_name form_name"
+      "name name"
+      "form_email form_email"
+      "mail mail"
+      "form_message form_message"
+      "msg msg"
+      ". submit submit ."
+      ". clear clear .";
+  }
 }
 
 /* End of Get In Touch page */
 
-
-
-
-
-
-
 /*.cards { */
-    /* display: grid;
+/* display: grid;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); */
-    /* grid-template-areas: ". card card ."
+/* grid-template-areas: ". card card ."
                          ". card card ."
                          ". card card ."; */
-    /* grid-gap: 20px; */
-    /* grid-column: 2 / 4;
+/* grid-gap: 20px; */
+/* grid-column: 2 / 4;
     grid-row: 5 / 6;
 } */
 /* .card { */
-    /* display: grid;
+/* display: grid;
     grid-template-rows: max-content 200px 1fr;  */
 
-    /* grid-column: 1 / 5;
+/* grid-column: 1 / 5;
     grid-row: 5 / 6; */
 /* }
   */
-
-
-
